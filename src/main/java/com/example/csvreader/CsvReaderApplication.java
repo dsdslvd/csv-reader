@@ -57,7 +57,7 @@ public class CsvReaderApplication {
 
 	private static JTable createJTable(List<List<String>> data) {
 		Integer numColumns = data.get(0).size() - 1;
-		Integer numRows = data.size() - 1;
+		Integer numRows = data.size();
 		String[] headers = new String[numColumns];
 		Object[][] rows = new Object[numRows][numColumns];
 		for (int x = 0; x < numRows; x++) {
